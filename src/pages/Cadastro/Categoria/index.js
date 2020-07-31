@@ -45,26 +45,22 @@ function CadastroCategoria(){
         }}>
 
           <FormField 
-            label="Digite a Categoria"
+            label="Digite a Categoria:"
             type="text"
             name="nome"
             value={values.nome} 
             onChange={handleChange}
           />
 
-          <div>
-            <label>
-              Descrição:
-              <textarea
-                type="text"
-                name="descricao"
-                value={values.descricao} 
-                onChange={handleChange}
-              />
-            </label>
-          </div>
           <FormField 
-            label="Coloque uma cor"
+            label="Descrição:"
+            type=""
+            value={values.descricao} 
+            onChange={handleChange}
+          />
+
+          <FormField 
+            label="Coloque uma cor:"
             type="color"
             value={values.cor} 
             onChange={handleChange}

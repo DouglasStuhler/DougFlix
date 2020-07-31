@@ -1,5 +1,5 @@
 import React from 'react';
-import { VideoCardContainer } from './styles';
+import { Carousel } from './styles';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -13,7 +13,7 @@ function getYouTubeId(youtubeURL) {
 function VideoCard({ videoTitle, videoURL, categoryColor }) {
   const image = `https://img.youtube.com/vi/${getYouTubeId(videoURL)}/hqdefault.jpg`;
   return (
-    <VideoCardContainer
+    <Carousel
       url={image}
       href={videoURL}
       target="_blank"
